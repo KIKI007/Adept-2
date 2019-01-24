@@ -1,0 +1,19 @@
+# Template for configure to create makefile_include, which is included
+# by test/Makefile and benchmark/Makefile
+
+AR = ar
+CC = gcc
+CFLAGS = -g -O2
+CPP = gcc -E
+CPPFLAGS = 
+CXX = g++
+CXXCPP = g++ -E
+CXXFLAGS = -g -O2 
+DEFS = -DHAVE_CONFIG_H
+LD = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+LDFLAGS =  
+LIBOBJS = 
+LIBS = -llapack -lblas 
+SHELL = /bin/sh
+LIBTOOL = $(SHELL) $(top_builddir)/libtool
+USE_GSL = no
